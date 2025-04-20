@@ -1,0 +1,5 @@
+# Summary
+
+In summary, this book has no content whatsoever.
+
+$$\text{Odds} = \frac{p}{1 - p}$$

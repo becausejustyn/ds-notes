@@ -1,0 +1,142 @@
+
+# Statistical Rethinking Notes
+
+## Links
+
+- https://bookdown.org/content/4857/geocentric-models.html
+- https://github.com/vincentarelbundock/rethinking2
+- https://vincentarelbundock.github.io/rethinking2/04.html
+- https://github.com/rmcelreath/rethinking/tree/master
+
+## Geocentric Models (Chapter 4)
+
+### Gaussian Model of Height
+
+```stan
+data {
+  int<lower=1> n;
+  vector[n] height;
+}
+parameters {
+  real mu;
+  real<lower=0,upper=50> sigma;
+}
+model {
+  height ~ normal(mu, sigma);
+  sigma ~ uniform(0, 50);
+  mu ~ normal(178, 20);
+}
+```
+
+Hi
+
+```stan
+data {
+  int<lower=1> n;
+  vector[n] height;
+}
+parameters {
+  real mu;
+  real<lower=0,upper=50> sigma;
+}
+model {
+  height ~ normal(mu, sigma);
+  sigma ~ uniform(0, 50);
+  mu ~ normal(178, .1);
+}
+```
+
+### Linear Prediction
+
+```stan
+data {
+  int<lower=1> n;
+  real xbar;
+  vector[n] height;
+  vector[n] weight;
+}
+parameters {
+  real<lower=0,upper=50> sigma;
+  real<lower=0> b;
+  real a;
+}
+model {
+  vector[n] mu;
+  mu = a + b * (weight - xbar);
+  height ~ normal(mu, sigma);
+  a ~ normal(178, 20);
+  b ~ lognormal(0, 1);
+  sigma ~ uniform(0, 50);
+}
+```
+
+### Curves from Lines
+
+```stan
+data {
+  int<lower=1> n;   // number of observations
+  int<lower=1> K;   // number of coefficients (including intercept)
+  vector[n] height;      // outcome
+  matrix[n, K] X;   // regressors
+}
+parameters {
+  real<lower=0,upper=50> sigma;
+  vector[K] b;
+}
+transformed parameters {
+  vector[n] mu;
+  mu = X * b;
+}
+model {
+  height ~ normal(mu, sigma);
+  b[1] ~ normal(178, 20);
+  b[2] ~ lognormal(0, 1);
+  if (K > 2) {
+    for (i in 3:K) {
+      b[i] ~ normal(0, 10);
+      }
+  }
+  sigma ~ uniform(0, 50);
+}
+generated quantities {
+  vector[n] muhat;
+  for (i in 1:n) {
+    muhat[i] = normal_rng(mu[i], sigma);
+  }
+}
+```
+
+### Cherry Blossom Splines
+
+```stan
+data {
+    int n;
+    int k;
+    int doy[n];
+    matrix[n, k] B;
+}
+parameters {
+    real a;
+    vector[k] w;
+    real<lower=0> sigma;
+}
+transformed parameters {
+    vector[n] mu;
+    mu = a + B * w;
+}
+model {
+    for (i in 1:n) {
+        doy[i] ~ normal(mu[i], sigma);
+    }
+    a ~ normal(100, 10);
+    w ~ normal(0, 10);
+    sigma ~ exponential(1);
+}
+```
+
+## Chapter 5
+## Chapter 6
+## Chapter 7
+## Chapter 8
+## Chapter 9
+## Chapter 10

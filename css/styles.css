@@ -1,0 +1,189 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    width: min(800px, 90%);
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navigation */
+nav {
+    background: #fff;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #f0f2f5;
+}
+
+/* Gradient Text */
+.gradient-text {
+    background: linear-gradient(to right, #ff6b6b, #4ecdc4);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* Scroll Snap Section */
+.wrapper {
+    display: flex;
+    width: 100%;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    padding: 2rem 0;
+    scroll-behavior: smooth; /* Added for smooth scrolling */
+    -ms-overflow-style: none;  /* Hide scrollbar for IE and Edge */
+    scrollbar-width: none;  /* Hide scrollbar for Firefox */
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.card-container {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    scroll-snap-align: center;
+    padding: 20px 30px;
+    flex: 0 0 100%;
+    background-color: white;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation buttons for cards */
+.scroll-nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.scroll-nav button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #f0f2f5;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.scroll-nav button:hover {
+    background-color: #e4e6e9;
+}
+
+/* Neumorphism */
+.neumorphic {
+    background: #e0e5ec;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 
+        8px 8px 16px #a3b1c6,
+        -8px -8px 16px #ffffff;
+}
+
+.neumorphic-button {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 10px;
+    background: #e0e5ec;
+    box-shadow: 
+        5px 5px 10px #a3b1c6,
+        -5px -5px 10px #ffffff;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.neumorphic-button:active {
+    box-shadow: 
+        inset 5px 5px 10px #a3b1c6,
+        inset -5px -5px 10px #ffffff;
+}
+
+/* Glassmorphism */
+.glass-container {
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+.glass {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 2rem;
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Resizable Element */
+.resize-element {
+    resize: both;
+    overflow: auto;
+    min-height: 100px;
+    min-width: 200px;
+    max-width: 100%;
+    padding: 1rem;
+    background: white;
+    border: 2px solid #ddd;
+    margin: 2rem 0;
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 4rem;
+}
+
+h2 {
+    margin-bottom: 1.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}

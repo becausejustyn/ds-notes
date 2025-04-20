@@ -1,0 +1,25 @@
+project:
+  type: book
+
+book:
+  title: "Stats-book"
+  author: "Justyn Rodrigues"
+  date: "04/01/2025"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - papers.qmd
+    - statistical-rethinking.qmd
+    - notes.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+
+

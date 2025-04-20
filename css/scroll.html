@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Snap - Modern CSS Showcase</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gradient.html">Gradient Text</a></li>
+            <li><a href="scroll.html">Scroll Snap</a></li>
+            <li><a href="neumorphism.html">Neumorphism</a></li>
+            <li><a href="glassmorphism.html">Glassmorphism</a></li>
+            <li><a href="resize.html">Resizable</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1 class="gradient-text">Scroll Snap Gallery</h1>
+        <section>
+            <h2>One Card at a Time</h2>
+            <div class="wrapper" id="cardWrapper">
+                <div class="card-container">
+                    <div class="card">
+                        <h3>Card 1</h3>
+                        <p>This card demonstrates the scroll snap effect. Each card takes up the full width of the container.</p>
+                        <p>Try scrolling horizontally or use the navigation buttons below!</p>
+                    </div>
+                    <div class="card">
+                        <h3>Card 2</h3>
+                        <p>Notice how it snaps perfectly to each card.</p>
+                        <p>The scrollbar is hidden for a cleaner look.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Card 3</h3>
+                        <p>Smooth scrolling is enabled for a better experience.</p>
+                        <p>You can also use the arrow keys to navigate.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Card 4</h3>
+                        <p>Last card in our gallery!</p>
+                        <p>The navigation is both touch and button friendly.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-nav">
+                <button onclick="scrollCards('prev')">Previous</button>
+                <button onclick="scrollCards('next')">Next</button>
+            </div>
+        </section>
+    </div>
+
+    <!-- Load JavaScript at the end of the body -->
+    <script src="scroll.js"></script>
+</body>
+</html>

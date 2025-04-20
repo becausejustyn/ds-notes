@@ -1,0 +1,11 @@
+# Papers
+
+This is where you put notes of papers that you have read.
+
+Why probability probably doesn't exist (but it is useful to act like it does) @spiegelhalter2024probability
+
+- Despite the widespread application of probability in scientific disciplines, there is no consensus on its precise definition or ontological status. 
+- He suggests that probability may not exist as a tangible entity but serves as a valuable conceptual tool for modeling uncertainty and making informed decisions. 
+- This perspective challenges traditional interpretations and encourages a more nuanced understanding of probability's role in scientific inquiry.
+- By adopting probabilistic reasoning, scientists and statisticians can effectively navigate uncertainty and draw meaningful conclusions, underscoring the importance of probability as a methodological construct.
+

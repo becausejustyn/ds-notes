@@ -1,0 +1,15 @@
+# Introduction
+
+This is a book created from markdown and executable code.
+
+See @knuth84 for additional discussion of literate programming.  
+
+And also check out @mcelreath2018statistical for the coolest book around!
+
+Here are some links
+
+- https://www.r-causal.org/
+- https://github.com/rmcelreath/rethinking
+- https://vincentarelbundock.github.io/rethinking2/
+- https://bookdown.org/content/4857/geocentric-models.html
+
