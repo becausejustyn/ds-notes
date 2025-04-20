@@ -3,3 +3,40 @@
 In summary, this book has no content whatsoever.
 
 $$\text{Odds} = \frac{p}{1 - p}$$
+
+The Book of Why [@pearl2018book] has been great thus far. You will want to fix it up, so thus far here is the graph you started from page 12.
+
+```mermaid
+flowchart LR
+        subgraph Background
+        A[Knowledge 1]
+        end
+
+        subgraph Inputs
+        B[Assumptions 2]
+        E[Query 5]
+        F[Data 7]
+        end
+
+        subgraph "Inference Engine"
+        C[Causal Model 3]
+        G[Can the query be answered?]
+        H[Statistical Estimation 8]
+        end
+
+        subgraph Outputs
+        D[Testable Implications 4]
+        I[Estimate 9]
+        J[Return to boxes 2 and 3]
+        K[Estimand 6]
+        end
+
+        A --> B --> C --> D
+        C --> G
+        E --> G
+        G --> |No| J
+        G --> |Yes| K --> H --> I
+        F --> H
+
+        style A stroke-width:2px,stroke-dasharray: 2
+```
