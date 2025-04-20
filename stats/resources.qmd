@@ -1,0 +1,83 @@
+# Resources
+
+Here you will include resources that you find useful. This makes it more practical than having 100 notes tabs.
+
+## Blog Posts
+
+- [Closing Backdoors in DAGs](https://www.andrewheiss.com/blog/2020/02/25/closing-backdoors-dags/)
+- [How to interpret and report nonlinear effects from Generalized Additive Models](https://ecogambler.netlify.app/blog/interpreting-gams/)
+- [Random Effects and Overdispersion](https://jofrhwld.github.io/blog/posts/2024/11/2024-11-20_poisson-ranef/)
+- [Random effect priors](https://jofrhwld.github.io/blog/posts/2024/11/2024-11-19_logit-priors-again/)
+- [Markov Chain Monte Carlo Without all the Bullshit](https://www.jeremykun.com/2015/04/06/markov-chain-monte-carlo-without-all-the-bullshit/)
+- [ML beyond Curve Fitting: An Intro to Causal Inference and do-Calculus](https://www.inference.vc/untitled/)
+- [Demystifying causal inference estimands: ATE, ATT, and ATU](https://www.andrewheiss.com/blog/2024/03/21/demystifying-ate-att-atu/)
+- [Understanding the Birthday Paradox](https://betterexplained.com/articles/understanding-the-birthday-paradox/)
+
+## Tools
+
+- [Stan Playground](https://stan-playground.flatironinstitute.org/)
+
+## Courses
+
+- [Introduction to Causal Inference](https://www.bradyneal.com/causal-inference-course)
+- [A Crash Course in Causality: Inferring Causal Effects from Observational Data](https://www.coursera.org/learn/crash-course-in-causality)
+- [Causal Generative Machine Learning Minicourse](https://altdeep.ai/p/causal-ml-minicourse)
+- [Causal Diagrams: Draw Your Assumptions Before Your Conclusions](https://www.harvardonline.harvard.edu/course/causal-diagrams-draw-your-assumptions-your-conclusions)
+
+## Misc
+
+- [Statistical Rethinking Resources](https://xcelab.net/rm/)
+
+## Sort Me
+
+```
+https://arelbundock.com/posts/frontdoor/index.html
+https://cran.r-project.org/web/packages/ggdag/vignettes/intro-to-dags.html
+https://www.r4epi.com/introduction-to-directed-acyclic-graphs
+https://bookdown.org/jbrophy115/bookdown-clinepi/causal.html
+https://evalf20.classes.andrewheiss.com/example/dags/
+https://mixtape.scunning.com/03-directed_acyclical_graphs
+https://betanalpha.github.io/assets/chapters_html/customer_conversion.html
+https://betanalpha.github.io/assets/case_studies/generative_modeling.html#1_Generating_What_Now
+https://donskerclass.github.io/CausalEconometrics.html
+https://alejandroschuler.github.io/mci/7ae35a9031aa4b32b9e82cea3c32a96c.html
+https://jofrhwld.github.io/blog/posts/2024/11/2024-11-19_logit-priors-again/
+https://notstatschat.rbind.io/2024/11/21/collinearity-again/
+https://jofrhwld.github.io/blog/posts/2024/11/2024-11-20_poisson-ranef/
+https://compneuro.neuromatch.io/tutorials/W3D4_ReinforcementLearning/student/W3D4_Tutorial2.html
+https://statmodeling.stat.columbia.edu/2018/02/04/andrew-vs-multi-armed-bandit/
+https://ecogambler.netlify.app/blog/interpreting-gams/
+https://onlinelibrary.wiley.com/doi/epdf/10.1002/sim.4002
+https://bpspsychub.onlinelibrary.wiley.com/doi/10.1111/bmsp.12369
+https://cognitiveclass.ai/courses/summarize-private-documents-using-rag-langchain-and-llms
+https://github.com/rasbt/LLMs-from-scratch/blob/main/ch07/03_model-evaluation/llm-instruction-eval-ollama.ipynb
+https://github.com/rasbt/LLMs-from-scratch/blob/main/ch07/03_model-evaluation/llm-instruction-eval-openai.ipynb
+https://huggingface.co/spaces/Vokturz/can-it-run-llm
+https://openpipe.ai/blog/the-ten-commandments-of-fine-tuning-in-prod
+https://openpipe.ai/blog/a-non-technical-explanation-of-fine-tuning
+https://openpipe.ai/blog/fine-tune-your-own-llama-2-to-replace-gpt-3-5-4
+https://osanseviero.github.io/hackerllama/blog/posts/gpu-poor-strike-back/
+https://osanseviero.github.io/hackerllama/blog/posts/random_transformer/
+https://osanseviero.github.io/hackerllama/blog/posts/llm_evals/
+https://jxnl.co/writing/category/rag/
+https://jxnl.co/writing/2024/05/22/what-is-prompt-optimization/
+https://jxnl.co/writing/category/llm/
+https://hamel.dev/blog/posts/drift/
+https://hamel.dev/blog/posts/fine_tuning_valuable.html
+https://hamel.dev/blog/posts/prompt/
+https://hamel.dev/notes/llm/inference/03_inference.html
+https://lilianweng.github.io/
+https://www.philschmid.de/fine-tune-embedding-model-for-rag
+https://www.philschmid.de/fine-tune-llms-in-2024-with-trl
+https://www.philschmid.de/evaluate-llm
+https://github.com/philschmid/deep-learning-pytorch-huggingface
+https://github.com/huggingface/notebooks
+https://magazine.sebastianraschka.com/p/finetuning-large-language-models
+https://magazine.sebastianraschka.com/p/understanding-large-language-models
+https://magazine.sebastianraschka.com/p/ahead-of-ai-2-transformers-fast-and
+https://magazine.sebastianraschka.com/p/accelerating-pytorch-model-training
+https://eugeneyan.com/writing/design-patterns/
+https://eugeneyan.com/writing/uncommon-python/
+https://arelbundock.com/posts/acmq_en_06_dag/index.html
+```
+
