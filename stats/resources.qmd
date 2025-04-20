@@ -1,0 +1,32 @@
+# Resources
+
+Here you will include resources that you find useful. This makes it more practical than having 100 notes tabs.
+
+## Blog Posts
+
+- [Closing Backdoors in DAGs](https://www.andrewheiss.com/blog/2020/02/25/closing-backdoors-dags/)
+- [How to interpret and report nonlinear effects from Generalized Additive Models](https://ecogambler.netlify.app/blog/interpreting-gams/)
+- [Random Effects and Overdispersion](https://jofrhwld.github.io/blog/posts/2024/11/2024-11-20_poisson-ranef/)
+- [Random effect priors](https://jofrhwld.github.io/blog/posts/2024/11/2024-11-19_logit-priors-again/)
+- [Markov Chain Monte Carlo Without all the Bullshit](https://www.jeremykun.com/2015/04/06/markov-chain-monte-carlo-without-all-the-bullshit/)
+- [ML beyond Curve Fitting: An Intro to Causal Inference and do-Calculus](https://www.inference.vc/untitled/)
+- [Demystifying causal inference estimands: ATE, ATT, and ATU](https://www.andrewheiss.com/blog/2024/03/21/demystifying-ate-att-atu/)
+- [Understanding the Birthday Paradox](https://betterexplained.com/articles/understanding-the-birthday-paradox/)
+
+## Tools
+
+- [Stan Playground](https://stan-playground.flatironinstitute.org/)
+
+## Courses
+
+- [Introduction to Causal Inference](https://www.bradyneal.com/causal-inference-course)
+- [A Crash Course in Causality: Inferring Causal Effects from Observational Data](https://www.coursera.org/learn/crash-course-in-causality)
+- [Causal Generative Machine Learning Minicourse](https://altdeep.ai/p/causal-ml-minicourse)
+- [Causal Diagrams: Draw Your Assumptions Before Your Conclusions](https://www.harvardonline.harvard.edu/course/causal-diagrams-draw-your-assumptions-your-conclusions)
+
+## Misc
+
+- [Statistical Rethinking Resources](https://xcelab.net/rm/)
+
+
+
