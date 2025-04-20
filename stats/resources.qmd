@@ -28,7 +28,6 @@ Here you will include resources that you find useful. This makes it more practic
 
 - [Statistical Rethinking Resources](https://xcelab.net/rm/)
 
-<<<<<<< HEAD
 ## Sort Me
 
 ```
@@ -81,7 +80,3 @@ https://eugeneyan.com/writing/design-patterns/
 https://eugeneyan.com/writing/uncommon-python/
 https://arelbundock.com/posts/acmq_en_06_dag/index.html
 ```
-=======
-
->>>>>>> 3c0e2a4cfb524b32030f0f20e68e2935cf48f70a
-
