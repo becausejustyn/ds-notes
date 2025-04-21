@@ -7,6 +7,20 @@ format: confluence-html
 
 Write your content in Quarto documents and publish to Confluence.
 
+## AI Blog Posts
+
+- [How do we become confident in the safety of a machine learning system?](https://www.alignmentforum.org/posts/FDJnZt8Ks2djouQTZ/how-do-we-become-confident-in-the-safety-of-a-machine)
+- [Chris Olah’s views on AGI safety](https://www.alignmentforum.org/posts/X2i9dQQK3gETCyqh2/chris-olah-s-views-on-agi-safety)
+- [LLM Orchestration in 2025: Frameworks + Best Practices](https://orq.ai/blog/llm-orchestration)
+- [LLM Orchestration: Strategies, Frameworks, and Best Practices](https://labelyourdata.com/articles/llm-orchestration)
+- [LLM Mixture of Experts Explained](https://www.tensorops.ai/post/what-is-mixture-of-experts-llm)
+- [Which Foundation Model is best for Agent Orchestration [Agents]](https://artificialintelligencemadesimple.substack.com/p/which-foundation-model-is-best-for)
+- [Mixture of Experts vs Mixture of Tokens: Making LLMs more efficient](https://www.superannotate.com/blog/mixture-of-experts-vs-mixture-of-tokens)
+- [Multi-Agent System](https://superagi.com/multi-agent-system/)
+- [Llm orchestration model overview](https://www.restack.io/p/llm-orchestration-answer-model-overview-cat-ai)
+- [Transformer vs. Mixture of Experts in LLMs](https://blog.dailydoseofds.com/p/transformer-vs-mixture-of-experts)
+- [Mixture of Experts: Advancing AI Agent Collaboration and Decisions](https://www.akira.ai/blog/mixture-of-experts-for-ai-agents)
+
 ## Microsoft Blog Posts
 
 - [Create and edit topics](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-create-edit-topics?tabs=webApp)
@@ -25,3 +39,17 @@ Write your content in Quarto documents and publish to Confluence.
 - [Introduction to Success by Design](https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/success-by-design)
 - [New Microsoft Copilot Studio implementation guide](https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/new-microsoft-copilot-studio-implementation-guide/)
 - [Overcoming fear, uncertainty, and doubt in the era of AI transformation](https://techcommunity.microsoft.com/blog/microsoftlearnblog/overcoming-fear-uncertainty-and-doubt-in-the-era-of-ai-transformation/3662204)
+
+## AI Blogs
+
+- [Sebastian Raschka](https://magazine.sebastianraschka.com/)
+- [Lilian Weng](https://lilianweng.github.io/)
+- [Phil Schmid](https://www.philschmid.de/)
+- [Hamel](https://hamel.dev/)
+- [Jason Liu](https://jxnl.co/writing/)
+- [hackerllama](https://osanseviero.github.io/hackerllama/)
+- [OpenPipe](https://openpipe.ai/blog)
+
+## Courses
+
+- [Summarize private documents using RAG, LangChain, and LLMs](https://cognitiveclass.ai/courses/summarize-private-documents-using-rag-langchain-and-llms)

@@ -13,6 +13,10 @@ Microsoft claim to be committed to building AI responsibility[^1], with the goal
 
 ## Terms
 
+### LLM Orchestration/Mixture of Experts (MoE)
+
+Hi
+
 ### Sandbagging
 
 Sandbagging: Claude have created a term called sandbagging [@Witten_Benton] where a LLM will intentionally downplay or deny what they are capable of. This is an example of an alignment issue where the inaccurate explanation is misrepresenting the cause and truth behind the reason [@turpin2023languagemodelsdontsay]. This can also be done by a system to ensure that it gets deployed, e.g. avoid certain topics when being evaluated.
