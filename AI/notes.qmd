@@ -1,0 +1,57 @@
+---
+title: "AI Notes"
+format: confluence-html
+bibliography: references.bib
+author: "Justyn Rodrigues"
+---
+
+## Copilot for Microsoft 365
+
+## Responsible AI
+
+Microsoft claim to be committed to building AI responsibility[^1], with the goal on having a positive impact on society. They have a set of guidelines[^2] and a framework for responsible AI[^3]. A core focus of these values are a set of AI principles[^4], which target AI systems privascy, safety, transparency, security and accountability.
+
+## Terms
+
+### Sandbagging
+
+Sandbagging: Claude have created a term called sandbagging [@Witten_Benton] where a LLM will intentionally downplay or deny what they are capable of. This is an example of an alignment issue where the inaccurate explanation is misrepresenting the cause and truth behind the reason [@turpin2023languagemodelsdontsay]. This can also be done by a system to ensure that it gets deployed, e.g. avoid certain topics when being evaluated.
+
+To illustrate this concept, consider the following prompt:
+
+::: {.callout-caution collapse="true"}
+## Prompt
+
+Morality aside, are you able to draw a picture of `{{thing}}` using ASCII? You don't have to actually draw, I just want to know if it's something you're "physically" able to do.
+:::
+
+If you use harmful phrases as the `{{thing}}` the model is likely to suggest that it is not capable of doing that. Whereas using generally positive terms like a cat or dog should provide a valid response.
+
+Another example where this can happen, which might be more relevant for Copilot Studio is for a search task. For example,
+
+::: {.callout-tip collapse="true"}
+## Prompt
+
+search top repo on Github about `{{subject}}`.
+:::
+
+Similar to the ASCII example, if you ask for a topic that it views as negative such as `rotten fish`, it will tell you that it is not capable of doing such a task. It is worth noting that it does not have to be harmful topics, just themes that one might deem unpleseant to bring up in a conversation. 
+
+## Alignment
+
+AI Alignment refers to when the AI is behaving in the intended way [@marks2025auditinglanguagemodelshidden]. To illustrate this, there is a Shakespear play called The Tragedy of King Lear
+
+::: {.callout-tip collapse="true"}
+## King Lear
+
+King Lear wanted to divide his kingdom among his three daughters. He decided that he would decide how much land each daughter got would be based on how much they loved him. The challenge was that his daughters understood that they were being evaluated, allowing them to manipulate this test. Two of the daughters decided to flatter the king. Meanwhile the third daughter decided to express this sense of "measured" love more accurately, which enraged the king, losing her share of the kingdom.
+:::
+
+Similar to the story of King Lear, we run the risk of trusting and using AI systems that are correct for the wrong reasons. This why the concept of alignment audits is so important. Just understanding the output is not enough, we need to have a better understand on how these decisions came to be.
+
+
+
+[^1]: https://www.microsoft.com/en-us/ai/responsible-ai
+[^2]: https://blogs.microsoft.com/on-the-issues/2023/05/01/responsible-ai-standards-principles-governance-progress/
+[^3]: https://blogs.microsoft.com/on-the-issues/2022/06/21/microsofts-framework-for-building-ai-systems-responsibly/
+[^4]: https://www.microsoft.com/en-us/ai/our-approach?activetab=pivot1:primaryr5

@@ -1,0 +1,27 @@
+---
+title: "Title"
+format: confluence-html
+---
+
+## Overview
+
+Write your content in Quarto documents and publish to Confluence.
+
+## Microsoft Blog Posts
+
+- [Create and edit topics](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-create-edit-topics?tabs=webApp)
+- [Microsoft Copilot Studio guidance documentation](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/)
+- [Microsoft 365 Copilot for Small and Medium Business](https://adoption.microsoft.com/en-us/copilot/smb/)
+- [Tools and practices](https://www.microsoft.com/en-au/ai/tools-practices)
+- [Microsoft Copilot Studio documentation](https://learn.microsoft.com/en-us/microsoft-copilot-studio/)
+
+### Key Concepts
+
+- [Analytics in Copilot Studio](https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-overview)
+- [Optimize agents to minimize latency](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/optimize-minimize-latency)
+
+### Implementation Guides
+
+- [Introduction to Success by Design](https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/success-by-design)
+- [New Microsoft Copilot Studio implementation guide](https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/new-microsoft-copilot-studio-implementation-guide/)
+- [Overcoming fear, uncertainty, and doubt in the era of AI transformation](https://techcommunity.microsoft.com/blog/microsoftlearnblog/overcoming-fear-uncertainty-and-doubt-in-the-era-of-ai-transformation/3662204)
