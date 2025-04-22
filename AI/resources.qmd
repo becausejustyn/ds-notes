@@ -1,6 +1,6 @@
 ---
 title: "Title"
-format: confluence-html
+format: html
 ---
 
 ## Overview

@@ -1,6 +1,7 @@
 ---
 title: "AI Notes"
-format: confluence-html
+lightbox: true
+format: html
 bibliography: references.bib
 author: "Justyn Rodrigues"
 ---
@@ -13,9 +14,31 @@ Microsoft claim to be committed to building AI responsibility[^1], with the goal
 
 ## Terms
 
+### Chain-of-Thought (CoT)/Reasoning
+
+This is where a model will show its working on how it got to its answer. This can be helpful with safety research as it can provide us a way to see if what was said in the Chain-of-Thought (CoT) matches the output. In other words, can we actually *trust* what models say in their CoT? 
+
+In an ideal situation, the CoT would be interpretable to the user, and it would be *faithful*; its explanation matches the true decision making process of how it arrived at its output. However, we are not in a perfect situation. There is no guarantee that the CoT will be understandable or words in the English language match up in a manner that correspond to the process of the neural network. 
+
+> Faithfulness: the accuracy of its description.
+
+Recent research from [@chenreasoning] look into the faithfulness of various models CoT reasoning, and it shows some negative results. It is important to keep in mind that while reasoning models are more capable than previous models, we cannot always rely on their reasoning. Even when a CoT might correspond with the process that a human might use to arrive at a problem, it is important to consider that LLM do not think like humans do and this can lead to a false sense of security.
+
 ### LLM Orchestration/Mixture of Experts (MoE)
 
-Hi
+One of the powerful features of Microsoft Copilot is the orchestration layer. This layer first is used to determine the right model and sources to use for the query. For instance, if the query is something fairly simple, it will use one of its smaller models for this task to save money and increase speed. Additionally, this layer allows the best data sources to be used. If the users query refers to data on the Microsoft tennet, it will look there instead of searching online. See @fig-stack for a general overview on how the process occurs.
+
+![Copilot Stack](images\copilot-stack.png){#fig-stack width=700 fig-align="left"}
+
+On a deeper level there are many processes that occur. As displayed in @fig-orch there are many considerations for a given promot. It can be broken down as follows:
+
+1. Input Prompt: first you will provide a prompt describing what you want to achieve.
+2. RAI Check: responsible AI check. This will determine if your prompt is inline with Microsoft and McIlwain's safeguards and protections. If this check fails, the response will let you know. If it passes this check, the query will continue.
+3. Reasoning
+4. Responding
+5. Natural Language Output
+
+![Copilot Orchestration Layer](images/copilot_orchestrator_sequence_v2.png){#fig-orch}
 
 ### Sandbagging
 
