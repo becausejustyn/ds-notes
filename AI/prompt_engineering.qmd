@@ -1,0 +1,68 @@
+---
+title: "Prompt Engineering"
+lightbox: true
+format: html
+bibliography: references.bib
+author: "Justyn Rodrigues"
+---
+
+This will be a document on prompt engineering.
+
+## Techniques
+
+## Resources
+
+- [Prompt Engineering](https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/)
+- [Microsoft Prompt Engineering](https://microsoft.github.io/prompt-engineering/)
+- [Microsoft Prompt engineering techniques](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/prompt-engineering?tabs=chat)
+- [Methods of prompt programming](https://generative.ink/posts/methods-of-prompt-programming/)
+- [Prompt Engineering Guide: How to Engineer the Perfect Prompts](https://richardbatt.co.uk/2023/01/12/prompt-engineering-guide-how-to-engineer-the-perfect-prompts/)
+- [A Complete Introduction to Prompt Engineering For Large Language Models](https://www.mihaileric.com/posts/a-complete-introduction-to-prompt-engineering/)
+- [How to write good prompts: using spaced repetition to create understanding](https://andymatuschak.org/prompts/)
+- [Open AI Prompt Engineering](https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-the-openai-api)
+- [Cohere A Guide to Crafting Effective Prompts](https://docs.cohere.com/v2/docs/crafting-effective-prompts)
+- [Cohere Prompt Engineering Basics](https://cohere.com/llmu/prompt-engineering-basics)
+- [Prompt Engineering 101](https://humanloop.com/blog/prompt-engineering-101)
+- [Prompt Engineering Guide](https://www.promptingguide.ai/)
+- [A Beginner's Guide on Embeddings and Their Impact on Prompts](https://www.prompthub.us/blog/a-beginners-guide-on-embeddings-and-their-impact-on-prompts)
+- [Prompt Engineering Guide](https://learnprompting.org/docs/introduction)
+
+### Prompt Databases
+
+- [Prompt Database](https://www.thepromptindex.com/prompt-database.php)
+- [prompts.chat](https://prompts.chat/)
+- [promptify](https://www.promptify.pro/)
+- [PromptPerfect](https://promptperfect.jina.ai/)
+- [PromotDen](https://promptden.com/)
+- [PromptIndex](https://www.thepromptindex.com/)
+- [PromptSearch](https://www.ptsearch.info/tags/list/)
+- [AI Prompt Generators & Prompt Library](https://hero.page/ai-prompts)
+- [PromptHub](https://www.prompthub.us/)
+
+### Techniques
+
+- [Zero Shot Learning](https://arxiv.org/pdf/2205.11916.pdf): Performing tasks without specific examples
+- Few Shot Learning: Learning from a small number of examples
+- Chain of Thought: Step-by-step reasoning processes
+- [Multi Persona Collaboration](https://www.prompthub.us/blog/exploring-multi-persona-prompting-for-better-outputs)
+- [Prompting GPT-3 To Be Reliable](https://arxiv.org/abs/2210.09150)
+- [AutoPrompt: Eliciting Knowledge from Language Models with Automatically Generated Prompts.](https://arxiv.org/abs/2010.15980)
+- Self-Consistency: Multiple reasoning paths and result aggregation 
+- Constrained Generation: Setting up output constraints 
+- Role Prompting: Assigning specific roles to AI models 
+- Task Decomposition: Breaking down complex tasks 
+- Prompt Chaining: Connecting multiple prompts 
+- Instruction Engineering: Crafting clear instructions 
+- Prompt Optimization: A/B testing and refinement 
+- Handling Ambiguity: Resolving ambiguous prompts 
+- Length Management: Managing prompt complexity 
+- Negative Prompting: Avoiding undesired outputs 
+- Prompt Formatting: Various prompt formats 
+- Task-Specific Prompts: Prompts for specific tasks 
+- Ethical Considerations: Bias avoidance and inclusivity 
+- Prompt Security | Preventing injections 
+- Effectiveness Evaluation: Evaluating prompt performance 
+
+### Courses
+
+- [ChatGPT Prompt Engineering for Developers](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/)
