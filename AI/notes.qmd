@@ -40,6 +40,12 @@ On a deeper level there are many processes that occur. As displayed in @fig-orch
 
 ![Copilot Orchestration Layer](images/copilot_orchestrator_sequence_v2.png){#fig-orch}
 
+Continue here:
+
+- https://thorprojects.com/2025/04/17/the-orchestration-of-microsoft-365-copilot/
+- https://www.microsoft.com/en-us/ai/responsible-ai?activetab=pivot1%3aprimaryr6
+- https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/orchestrator
+
 ### Sandbagging
 
 Sandbagging: Claude have created a term called sandbagging [@Witten_Benton] where a LLM will intentionally downplay or deny what they are capable of. This is an example of an alignment issue where the inaccurate explanation is misrepresenting the cause and truth behind the reason [@turpin2023languagemodelsdontsay]. This can also be done by a system to ensure that it gets deployed, e.g. avoid certain topics when being evaluated.
