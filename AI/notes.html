@@ -108,7 +108,7 @@ div.csl-indent {
 <blockquote class="blockquote">
 <p>Faithfulness: the accuracy of its description.</p>
 </blockquote>
-<p>Recent research from <span class="citation" data-cites="chenreasoning">(<a href="#ref-chenreasoning" role="doc-biblioref">Chen et al., n.d.</a>)</span> look into the faithfulness of various models CoT reasoning, and it shows some negative results. It is important to keep in mind that while reasoning models are more capable than previous models, we cannot always rely on their reasoning. Even when a CoT might correspond with the process that a human might use to arrive at a problem, it is important to consider that LLM do not think like humans do and this can lead to a false sense of security.</p>
+<p>Recent research from <span class="citation" data-cites="chenreasoning">(<a href="#ref-chenreasoning" role="doc-biblioref">Chen et al. 2025</a>)</span> look into the faithfulness of various models CoT reasoning, and it shows some negative results. It is important to keep in mind that while reasoning models are more capable than previous models, we cannot always rely on their reasoning. Even when a CoT might correspond with the process that a human might use to arrive at a problem, it is important to consider that LLM do not think like humans do and this can lead to a false sense of security.</p>
 </section>
 <section id="llm-orchestrationmixture-of-experts-moe" class="level3">
 <h3 class="anchored" data-anchor-id="llm-orchestrationmixture-of-experts-moe">LLM Orchestration/Mixture of Experts (MoE)</h3>
@@ -116,7 +116,7 @@ div.csl-indent {
 <div id="fig-stack" class="quarto-figure quarto-figure-left quarto-float anchored" data-fig-align="left">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-stack-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images\copilot-stack.png" class="lightbox" data-glightbox="description: .lightbox-desc-1" data-gallery="quarto-lightbox-gallery-1"><img src="images\copilot-stack.png" class="img-fluid quarto-figure quarto-figure-left figure-img" width="700"></a>
+<a href="images\copilot-stack.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" data-glightbox="description: .lightbox-desc-1"><img src="images\copilot-stack.png" class="img-fluid quarto-figure quarto-figure-left figure-img" width="700"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-stack-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;1: Copilot Stack
@@ -124,23 +124,35 @@ Figure&nbsp;1: Copilot Stack
 </figure>
 </div>
 <p>On a deeper level there are many processes that occur. As displayed in <a href="#fig-orch" class="quarto-xref">Figure&nbsp;2</a> there are many considerations for a given promot. It can be broken down as follows:</p>
+<p>Use this citation <span class="citation" data-cites="microsoft2024copilot">(<a href="#ref-microsoft2024copilot" role="doc-biblioref">Microsoft 2024</a>)</span> and then add a footnote <a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> here.</p>
 <ol type="1">
-<li>Input Prompt: first you will provide a prompt describing what you want to achieve.</li>
-<li>RAI Check: responsible AI check. This will determine if your prompt is inline with Microsoft and McIlwain’s safeguards and protections. If this check fails, the response will let you know. If it passes this check, the query will continue.</li>
-<li>Reasoning</li>
-<li>Responding</li>
-<li>Natural Language Output</li>
+<li><strong>Input Prompt:</strong> first you will provide a prompt describing what you want to achieve.</li>
+<li><strong>RAI Check:</strong> responsible AI check. This will determine if your prompt is inline with Microsoft and McIlwain’s safeguards and protections. If this check fails, the response will let you know. If it passes this check, the query will continue.</li>
+<li><strong>Reasoning:</strong> “The Copilot orchestrator formulates a plan comprised of multiple actions that it performs in an attempt to respond to the user’s prompt.”
+<ol type="1">
+<li><strong>Context and Tool Solection:</strong> “The orchestrator retrieves the user’s conversation context from the context store and integrates data from Microsoft Graph to refine the context. It then adjusts the initial query based on this updated context and forwards it to the LLM (large language model) to guide the next steps. The LLM might proceed to generating a response using Copilot’s built-in capabilities, or it might determine that additional data is necessary. If more information is needed, the orchestrator does a search for the plugins (tools) with the right skill for the task from the agent’s enabled plugins based on the descriptions of the plugins and their functions.”</li>
+<li><strong>Function Matching and Parameter Determination:</strong> “The orchestrator formulates a new prompt that incorporates the user’s initial query, the updated context, and the selected plugins, and presents it to the LLM. The LLM evaluates the input and specifies the optimal plugin and function within that plugin to address the task. It then provides the orchestrator with the necessary function details and parameters required to gather the needed information.”</li>
+<li><strong>Tool Initiation:</strong> “The orchestrator uses the response from the LLM to construct an API request and send the request to the tool initiator, which securely retrieves the requested information located outside of Copilot’s infrastructure. It runs the request and sends the results back to the orchestrator for further processing.”</li>
+<li><strong>Result Analysis and Response Formulation:</strong> “The orchestrator integrates the API response into the ongoing context and consults the LLM in a continuous reasoning loop until the LLM deems it appropriate to generate a final response.”</li>
+</ol></li>
+<li><strong>Responding:</strong> “The orchestrator compiles all the information gathered during the reasoning process and submits it to the LLM to create a final response. After ensuring the response complies with Responsible AI guidelines, it sends the response back to the orchestrator, which logs it in the context store and delivers it to the user via the Copilot UI.”</li>
+<li><strong>Natural Language Output:</strong> ” Finally, the orchestrator delivers the response to the user and updates the conversation state. Copilot is ready for its next prompt.”</li>
 </ol>
 <div id="fig-orch" class="quarto-figure quarto-figure-center quarto-float anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-orch-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/copilot_orchestrator_sequence_v2.png" class="lightbox" data-glightbox="description: .lightbox-desc-2" data-gallery="quarto-lightbox-gallery-2"><img src="images/copilot_orchestrator_sequence_v2.png" class="img-fluid figure-img"></a>
+<a href="images/copilot_orchestrator_sequence_v2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" data-glightbox="description: .lightbox-desc-2"><img src="images/copilot_orchestrator_sequence_v2.png" class="img-fluid figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-orch-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;2: Copilot Orchestration Layer
 </figcaption>
 </figure>
 </div>
+<p>Continue here:</p>
+<ul>
+<li>https://thorprojects.com/2025/04/17/the-orchestration-of-microsoft-365-copilot/</li>
+<li>https://www.microsoft.com/en-us/ai/responsible-ai?activetab=pivot1%3aprimaryr6</li>
+</ul>
 </section>
 <section id="sandbagging" class="level3">
 <h3 class="anchored" data-anchor-id="sandbagging">Sandbagging</h3>
@@ -213,10 +225,13 @@ King Lear
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
 <div id="ref-chenreasoning" class="csl-entry" role="listitem">
-Chen, Yanda, Joe Benton, Ansh Radhakrishnan, Jonathan Uesato Carson Denison, John Schulman, Arushi Somani, Peter Hase, et al. n.d. <span>“Reasoning Models Don’t Always Say What They Think.”</span>
+Chen, Yanda, Joe Benton, Ansh Radhakrishnan, Jonathan Uesato Carson Denison, John Schulman, Arushi Somani, Peter Hase, et al. 2025. <span>“Reasoning Models Don’t Always Say What They Think.”</span> <em>Anthropic Research</em>.
 </div>
 <div id="ref-marks2025auditinglanguagemodelshidden" class="csl-entry" role="listitem">
 Marks, Samuel, Johannes Treutlein, Trenton Bricken, Jack Lindsey, Jonathan Marcus, Siddharth Mishra-Sharma, Daniel Ziegler, et al. 2025. <span>“Auditing Language Models for Hidden Objectives.”</span> <a href="https://arxiv.org/abs/2503.10965">https://arxiv.org/abs/2503.10965</a>.
+</div>
+<div id="ref-microsoft2024copilot" class="csl-entry" role="listitem">
+Microsoft. 2024. <span>“Extend Microsoft 365 Copilot.”</span> <a href="https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/orchestrator">https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/orchestrator</a>.
 </div>
 <div id="ref-turpin2023languagemodelsdontsay" class="csl-entry" role="listitem">
 Turpin, Miles, Julian Michael, Ethan Perez, and Samuel R. Bowman. 2023. <span>“Language Models Don’t Always Say What They Think: Unfaithful Explanations in Chain-of-Thought Prompting.”</span> <a href="https://arxiv.org/abs/2305.04388">https://arxiv.org/abs/2305.04388</a>.
@@ -231,6 +246,7 @@ Witten, Zack, and Joe Benton. n.d. <span>“Won’t Vs. Can’t: Sandbagging-Lik
 <li id="fn2"><p>https://blogs.microsoft.com/on-the-issues/2023/05/01/responsible-ai-standards-principles-governance-progress/<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn3"><p>https://blogs.microsoft.com/on-the-issues/2022/06/21/microsofts-framework-for-building-ai-systems-responsibly/<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn4"><p>https://www.microsoft.com/en-us/ai/our-approach?activetab=pivot1:primaryr5<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/orchestrator<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main>
 <!-- /main column -->
@@ -644,7 +660,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","openEffect":"zoom","closeEffect":"zoom","selector":".lightbox","loop":false});
+<script>var lightboxQuarto = GLightbox({"selector":".lightbox","openEffect":"zoom","loop":false,"descPosition":"bottom","closeEffect":"zoom"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

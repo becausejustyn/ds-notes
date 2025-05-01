@@ -32,11 +32,17 @@ One of the powerful features of Microsoft Copilot is the orchestration layer. Th
 
 On a deeper level there are many processes that occur. As displayed in @fig-orch there are many considerations for a given promot. It can be broken down as follows:
 
-1. Input Prompt: first you will provide a prompt describing what you want to achieve.
-2. RAI Check: responsible AI check. This will determine if your prompt is inline with Microsoft and McIlwain's safeguards and protections. If this check fails, the response will let you know. If it passes this check, the query will continue.
-3. Reasoning
-4. Responding
-5. Natural Language Output
+Use this citation [@microsoft2024copilot] and then add a footnote here. 
+
+1. **Input Prompt:** first you will provide a prompt describing what you want to achieve.
+2. **RAI Check:** responsible AI check. This will determine if your prompt is inline with Microsoft and McIlwain's safeguards and protections. If this check fails, the response will let you know. If it passes this check, the query will continue.
+3. **Reasoning:** "The Copilot orchestrator formulates a plan comprised of multiple actions that it performs in an attempt to respond to the user's prompt."
+   1. **Context and Tool Solection:** "The orchestrator retrieves the user's conversation context from the context store and integrates data from Microsoft Graph to refine the context. It then adjusts the initial query based on this updated context and forwards it to the LLM (large language model) to guide the next steps. The LLM might proceed to generating a response using Copilot's built-in capabilities, or it might determine that additional data is necessary. If more information is needed, the orchestrator does a search for the plugins (tools) with the right skill for the task from the agent's enabled plugins based on the descriptions of the plugins and their functions."
+   2. **Function Matching and Parameter Determination:** "The orchestrator formulates a new prompt that incorporates the user's initial query, the updated context, and the selected plugins, and presents it to the LLM. The LLM evaluates the input and specifies the optimal plugin and function within that plugin to address the task. It then provides the orchestrator with the necessary function details and parameters required to gather the needed information."
+   3. **Tool Initiation:** "The orchestrator uses the response from the LLM to construct an API request and send the request to the tool initiator, which securely retrieves the requested information located outside of Copilot's infrastructure. It runs the request and sends the results back to the orchestrator for further processing."
+   4. **Result Analysis and Response Formulation:** "The orchestrator integrates the API response into the ongoing context and consults the LLM in a continuous reasoning loop until the LLM deems it appropriate to generate a final response."
+4. **Responding:** "The orchestrator compiles all the information gathered during the reasoning process and submits it to the LLM to create a final response. After ensuring the response complies with Responsible AI guidelines, it sends the response back to the orchestrator, which logs it in the context store and delivers it to the user via the Copilot UI."
+5. **Natural Language Output:** " Finally, the orchestrator delivers the response to the user and updates the conversation state. Copilot is ready for its next prompt."
 
 ![Copilot Orchestration Layer](images/copilot_orchestrator_sequence_v2.png){#fig-orch}
 
@@ -44,7 +50,6 @@ Continue here:
 
 - https://thorprojects.com/2025/04/17/the-orchestration-of-microsoft-365-copilot/
 - https://www.microsoft.com/en-us/ai/responsible-ai?activetab=pivot1%3aprimaryr6
-- https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/orchestrator
 
 ### Sandbagging
 
