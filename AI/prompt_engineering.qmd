@@ -8,6 +8,8 @@ author: "Justyn Rodrigues"
 
 This will be a document on prompt engineering.
 
+Treating a LLM like a search engine may provide adequte results for more simple tasks, but that will not always produce the same result. Depending on the task, you may want more reproducinbiliy with your prompts. Because most state of the art LLM use a mixture of experts architecture, providing more details in your prompt will allow more specific outputs as it will have a lower probability of random neurons being activated. For example, a fairly general prompt has more possible outputs, whereas the more specific you are, the less randomness you can expect. You can view it like asking for someone to bring you a book from a room. Without any additional information, there is a variety of books that somebody could bring back. However, if you provide some details of the book, e.g. size, colour, etc. or even provide negative examples (what it is not), you can increase the success rate of the correct book being returned to you.
+
 ## Techniques
 
 ## Resources

@@ -48,8 +48,9 @@ Use this citation [@microsoft2024copilot] and then add a footnote here.
 
 Continue here:
 
-- https://thorprojects.com/2025/04/17/the-orchestration-of-microsoft-365-copilot/
 - https://www.microsoft.com/en-us/ai/responsible-ai?activetab=pivot1%3aprimaryr6
+
+More here [@bougue2025]. 
 
 ### Sandbagging
 
