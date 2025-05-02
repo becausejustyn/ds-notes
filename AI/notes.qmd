@@ -52,6 +52,11 @@ Continue here:
 
 More here [@bougue2025]. 
 
+What is an Orchestration Engine?
+
+- Copilot is an orchestration engine.  It connects a set of services to create experiences.  In the case of Microsoft 365 Copilot, those experiences include grounded responses from a large language model (LLM) that has been primed with your organization’s content.  Decades ago, there was a movement to a service-oriented architecture, which was a way of keeping individual services focused on doing one thing.  Microservices would do something very small, but they’d do it very well.  From this arose a variety of orchestration engines that would allow you to stitch together these services in ways that solve real business problems.  Copilot does the same thing in a fixed way.
+- The beauty of the orchestrated approach is that the actual LLM used to solve the problem isn’t that important.  The LLM can be changed out at any time for a more effective or more efficient one.  For that matter, it’s possible for a single, grounded query to be sent to multiple LLMs and then those responses summarized by another call to an LLM.  The array of permutations that could be used to get better answers is virtually unlimited. Today, we’re already seeing models that are designed to specifically break problems down and generate more comprehensive responses.  The beauty of an orchestration engine approach is that it can begin with one LLM, and when the user asks for a detailed report, switch to another, more suitable, engine.
+
 ### Sandbagging
 
 Sandbagging: Claude have created a term called sandbagging [@Witten_Benton] where a LLM will intentionally downplay or deny what they are capable of. This is an example of an alignment issue where the inaccurate explanation is misrepresenting the cause and truth behind the reason [@turpin2023languagemodelsdontsay]. This can also be done by a system to ensure that it gets deployed, e.g. avoid certain topics when being evaluated.
