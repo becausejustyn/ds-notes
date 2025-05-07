@@ -20,6 +20,10 @@ Write your content in Quarto documents and publish to Confluence.
 - [Llm orchestration model overview](https://www.restack.io/p/llm-orchestration-answer-model-overview-cat-ai)
 - [Transformer vs. Mixture of Experts in LLMs](https://blog.dailydoseofds.com/p/transformer-vs-mixture-of-experts)
 - [Mixture of Experts: Advancing AI Agent Collaboration and Decisions](https://www.akira.ai/blog/mixture-of-experts-for-ai-agents)
+- [Reasoning models don't always say what they think](https://www.anthropic.com/research/reasoning-models-dont-say-think)
+- [Exploring model welfare](https://www.anthropic.com/research/exploring-model-welfare)
+- [Collective Constitutional AI: Aligning a Language Model with Public Input](https://www.anthropic.com/news/collective-constitutional-ai-aligning-a-language-model-with-public-input)
+- [Anthropic Economic Index: AI’s Impact on Software Development](https://www.anthropic.com/research/impact-software-development)
 
 ## Microsoft Blog Posts
 
