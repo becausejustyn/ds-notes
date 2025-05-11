@@ -16,6 +16,8 @@ Microsoft claim to be committed to building AI responsibility[^1], with the goal
 
 ### Chain-of-Thought (CoT)/Reasoning
 
+> Add reference from [@wei2022chain] and then use [Chain-of-Thought Prompting](https://learnprompting.org/docs/intermediate/chain_of_thought?srsltid=AfmBOopbrIgBuGWUTbr3r_Zj4UTyp3LwkI6UEIdM3V-g-0i5IP2tHGhb).
+
 This is where a model will show its working on how it got to its answer. This can be helpful with safety research as it can provide us a way to see if what was said in the Chain-of-Thought (CoT) matches the output. In other words, can we actually *trust* what models say in their CoT? 
 
 In an ideal situation, the CoT would be interpretable to the user, and it would be *faithful*; its explanation matches the true decision making process of how it arrived at its output. However, we are not in a perfect situation. There is no guarantee that the CoT will be understandable or words in the English language match up in a manner that correspond to the process of the neural network. 

@@ -28,6 +28,7 @@ Treating a LLM like a search engine may provide adequte results for more simple 
 - [Prompt Engineering Guide](https://www.promptingguide.ai/)
 - [A Beginner's Guide on Embeddings and Their Impact on Prompts](https://www.prompthub.us/blog/a-beginners-guide-on-embeddings-and-their-impact-on-prompts)
 - [Prompt Engineering Guide](https://learnprompting.org/docs/introduction)
+- [Introduction to Few-Shot Prompting Techniques](https://learnprompting.org/docs/advanced/few_shot/introduction)
 
 ### Prompt Databases
 
