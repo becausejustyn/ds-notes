@@ -42,6 +42,13 @@ Here you will include resources that you find useful. This makes it more practic
 - [Causal Inference The Mixtape](https://mixtape.scunning.com/)
 - [Causal inference & directed acyclic diagrams (DAGs)](https://bookdown.org/jbrophy115/bookdown-clinepi/causal.html)
 - [Introduction to Directed Acyclic Graphs](https://www.r4epi.com/introduction-to-directed-acyclic-graphs)
+- Regression and Other Stories
+  - [Site](https://avehtari.github.io/ROS-Examples/examples.html)
+  - [GitHub](https://github.com/avehtari/ROS-Examples)
+- [The Effects](https://github.com/NickCH-K/causalbook)
+  - [R Code](https://cran.r-project.org/web/packages/causaldata/index.html)
+  - [Python Code](https://pypi.org/project/causaldata/)
+- h
 
 ## Papers
 

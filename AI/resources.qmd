@@ -24,6 +24,9 @@ Write your content in Quarto documents and publish to Confluence.
 - [Exploring model welfare](https://www.anthropic.com/research/exploring-model-welfare)
 - [Collective Constitutional AI: Aligning a Language Model with Public Input](https://www.anthropic.com/news/collective-constitutional-ai-aligning-a-language-model-with-public-input)
 - [Anthropic Economic Index: AI’s Impact on Software Development](https://www.anthropic.com/research/impact-software-development)
+- [Distill: Why AI Safety Needs Social Scientists](https://distill.pub/2019/safety-needs-social-scientists/)
+- [Distill: Interactive Articles](https://distill.pub/2020/communicating-with-interactive-articles/)
+
 
 ## Microsoft Blog Posts
 
