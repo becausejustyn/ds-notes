@@ -19,6 +19,14 @@ Here you will include resources that you find useful. This makes it more practic
 - [(What's the Probabilistic Story) Modeling Glory?](https://betanalpha.github.io/assets/case_studies/generative_modeling.html)
 - [Generative Modeling of Customer Conversion](https://betanalpha.github.io/assets/chapters_html/customer_conversion.html)
 - [An Introduction to Directed Acyclic Graphs](https://cran.r-project.org/web/packages/ggdag/vignettes/intro-to-dags.html)
+- [Empirical Bayes for multiple sample sizes](https://chris-said.io/2017/05/03/empirical-bayes-for-multiple-sample-sizes/)
+- [Demystifying Stein's Paradox](https://jchau.org/2021/01/29/demystifying-stein-s-paradox/)
+- [A guide to Bayesian proportion tests with R and {brms}](https://www.andrewheiss.com/blog/2023/05/15/fancy-bayes-diffs-props/)
+- [Empirical Bayes](https://andrewcharlesjones.github.io/journal/21-empirical-bayes.html)
+- [Markov Chain Generators - LLM's Single Celled Ancestor](https://www.timgittos.com/p/markov-chain-generators-llms-single)
+- [Markov Models From The Bottom Up, with Python](https://ericmjl.github.io/essays-on-data-science/machine-learning/markov-models/)
+- [Probabilistic Graphical Models](https://truetheta.io/concepts/probabilistic-graphical-models/)
+- [Birthdays workflow example](https://users.aalto.fi/~ave/casestudies/Birthdays/birthdays.html)
 
 ## Tools
 

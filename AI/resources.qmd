@@ -26,6 +26,9 @@ Write your content in Quarto documents and publish to Confluence.
 - [Anthropic Economic Index: AI’s Impact on Software Development](https://www.anthropic.com/research/impact-software-development)
 - [Distill: Why AI Safety Needs Social Scientists](https://distill.pub/2019/safety-needs-social-scientists/)
 - [Distill: Interactive Articles](https://distill.pub/2020/communicating-with-interactive-articles/)
+- [Trustworthiness in the Age of AI](https://jfkirk.github.io/posts/trustworthiness-ai/)
+- [Remarks 1–18 on GPT](https://www.lesswrong.com/posts/7qSHKYRnqyrumEfbt/remarks-1-18-on-gpt-compressed)
+- [Everything I understand about chatgpt](https://gist.github.com/veekaybee/6f8885e9906aa9c5408ebe5c7e870698)
 
 
 ## Microsoft Blog Posts
@@ -35,6 +38,7 @@ Write your content in Quarto documents and publish to Confluence.
 - [Microsoft 365 Copilot for Small and Medium Business](https://adoption.microsoft.com/en-us/copilot/smb/)
 - [Tools and practices](https://www.microsoft.com/en-au/ai/tools-practices)
 - [Microsoft Copilot Studio documentation](https://learn.microsoft.com/en-us/microsoft-copilot-studio/)
+- [Learn about Copilot prompts](https://support.microsoft.com/en-au/topic/learn-about-copilot-prompts-f6c3b467-f07c-4db1-ae54-ffac96184dd5)
 
 ### Key Concepts
 
@@ -56,6 +60,9 @@ Write your content in Quarto documents and publish to Confluence.
 - [Jason Liu](https://jxnl.co/writing/)
 - [hackerllama](https://osanseviero.github.io/hackerllama/)
 - [OpenPipe](https://openpipe.ai/blog)
+- [AI Alignment Forum](https://www.alignmentforum.org/)
+- [Distill Blog](https://distill.pub/)
+- [Embrace The Red](https://embracethered.com/blog/)
 
 ## Courses
 
